@@ -17,8 +17,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "GestãoOdonto",
-  description: "Sistema de gestão odontológica",
+  title: "GestãoOdonto- Agende em minutos",
+  description: "Compare profissionais, confira preços e escolha o dentista ideal para você. Rápido, seguro e sem complicação",
+  robots:{
+    index: true,
+    follow: true,
+    nocache: true,
+  },
+  openGraph:{
+    title: "GestãoOdonto- Agende em minutos",
+    description: 'Encontre os melhores dentistas em um só lugar',
+    images:[`${process.env.NEXT_PUBLIC_URL}/dentista.jpg`]
+  }
 };
 
 export default function RootLayout({
