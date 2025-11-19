@@ -236,7 +236,7 @@ export function ProfileContent({user}: ProfileContentProps){
                   name='status'
                   render={({field})=> (
                     <FormItem>
-                        <FormLabel className='font-semibold'>Nome Completo
+                        <FormLabel className='font-semibold'>Status da Clínica
                             
                         </FormLabel>
                         <FormControl>
