@@ -17,19 +17,72 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "GestãoOdonto- Agende em minutos",
-  description: "Compare profissionais, confira preços e escolha o dentista ideal para você. Rápido, seguro e sem complicação",
-  robots:{
+  metadataBase: new URL(process.env.NEXT_PUBLIC_URL || "https://gestao-odonto.com"),
+  title: {
+    default: "GestãoOdonto – Agendamentos odontológicos rápidos e fáceis",
+    template: "%s | GestãoOdonto"
+  },
+  description:
+    "Agende consultas odontológicas em minutos. Compare dentistas, veja preços atualizados e escolha o profissional ideal para você. Prático, rápido e seguro.",
+  
+  keywords: [
+    "dentista",
+    "agendamento odontológico",
+    "odontologia",
+    "gestão clínica",
+    "clínica odontológica",
+    "dentista perto de mim",
+    "consulta odontológica",
+    "sistema odontológico",
+    "gestão odonto"
+  ],
+
+  robots: {
     index: true,
     follow: true,
     nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1
+    }
   },
-  openGraph:{
-    title: "GestãoOdonto- Agende em minutos",
-    description: 'Encontre os melhores dentistas em um só lugar',
-    images:[`${process.env.NEXT_PUBLIC_URL}/dentista.jpg`]
-  }
+
+  alternates: {
+    canonical: process.env.NEXT_PUBLIC_URL
+  },
+
+  openGraph: {
+    type: "website",
+    url: process.env.NEXT_PUBLIC_URL,
+    siteName: "GestãoOdonto",
+    title: "GestãoOdonto – Encontre os melhores dentistas",
+    description:
+      "Encontre os melhores dentistas, compare preços e marque sua consulta online em poucos minutos.",
+    images: [
+      {
+        url: `${process.env.NEXT_PUBLIC_URL}/dentista.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Dentista sorrindo e atendendo paciente"
+      }
+    ],
+    locale: "pt_BR"
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "GestãoOdonto – Agende seu dentista em minutos",
+    description:
+      "Compare profissionais e marque sua consulta odontológica de forma simples e rápida.",
+    images: [`${process.env.NEXT_PUBLIC_URL}/dentista.jpg`]
+  },
+
+  category: "saúde"
 };
+
 
 export default function RootLayout({
   children,
