@@ -39,12 +39,12 @@ export function Hero() {
         </div>
       </div>
 
-      {/* Imagem */}
       <img
-        src={HeroImg.src}
-        alt="Dentista usando sistema odontológico"
+        src="/14852068_5524778.jpg"
+        alt="Dentista"
         className="w-full max-w-xs md:max-w-sm object-cover rounded-full"
       />
+
     </section>
   )
 }
