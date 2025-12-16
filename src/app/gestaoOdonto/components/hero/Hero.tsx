@@ -1,10 +1,7 @@
-import HeroImg from '@/../../public/14852068_5524778.jpg'
-
 export function Hero() {
   return (
     <section className="w-full flex flex-col md:flex-row items-center justify-between gap-8 p-6 bg-[#E0E9F8]">
       
-      {/* Texto */}
       <div className="w-full flex flex-col gap-6 max-w-xl">
         <h1 className="text-3xl text-[#51A2FF] font-medium text-center md:text-left">
           A gestão da sua clínica odontológica em um só lugar
@@ -40,10 +37,10 @@ export function Hero() {
       </div>
 
       <img
-  src="/14852068_5524778.jpg"
-  alt="dentista"
-  className="w-full max-w-xs md:max-w-sm object-cover rounded-full"
-/>
+        src="/14852068_5524778.jpg"
+        alt="dentista"
+        className="w-full max-w-xs md:max-w-sm object-cover rounded-full"
+      />
     </section>
   )
 }
