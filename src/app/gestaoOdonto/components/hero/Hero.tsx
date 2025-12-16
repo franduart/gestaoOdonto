@@ -11,7 +11,7 @@ export function Hero() {
 
         <div className="flex flex-col gap-4 text-center md:text-left">
           <p className="font-medium text-zinc-800 leading-relaxed">
-            <strong>Organize atendimentos</strong>, <strong>reduza mensagens no WhatsApp</strong> 
+            <strong>Organize atendimentos</strong>, <strong>reduza mensagens no WhatsApp </strong> 
             e permita que seus <strong>pacientes agendem sozinhos</strong> com um link personalizado.
           </p>
 
