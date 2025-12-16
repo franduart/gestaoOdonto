@@ -40,11 +40,10 @@ export function Hero() {
       </div>
 
       <img
-        src="/14852068_5524778.jpg"
-        alt="Dentista"
-        className="w-full max-w-xs md:max-w-sm object-cover rounded-full"
-      />
-
+  src="/14852068_5524778.jpg"
+  alt="dentista"
+  className="w-full max-w-xs md:max-w-sm object-cover rounded-full"
+/>
     </section>
   )
 }
