@@ -1,8 +1,10 @@
+import HeroImg from '@/../../public/14852068_5524778.jpg'
+
 export function Hero() {
   return (
-    <section className="w-full flex flex-col md:flex-row items-center justify-between gap-8 p-6 bg-[#E0E9F8]">
+    <section className="w-full flex flex-col md:flex-row items-center justify-between gap-8 p-4 bg-[#E0E9F8]">
       
-      <div className="w-full flex flex-col gap-6 max-w-xl">
+      <div className="w-full flex flex-col gap-6 max-w-xl px-4">
         <h1 className="text-3xl text-[#51A2FF] font-medium text-center md:text-left">
           A gestão da sua clínica odontológica em um só lugar
         </h1>
@@ -13,31 +15,26 @@ export function Hero() {
             e permita que seus <strong>pacientes agendem sozinhos</strong> com um link personalizado.
           </p>
 
-          <strong className="text-[#51A2FF] font-medium text-lg">
+          <strong className="text-[#51A2FF] font-medium text-[1.2rem]">
             Automatize sua rotina, aumente sua captação de leads e ofereça uma experiência moderna para seus pacientes.
           </strong>
-
-          <h4 className="text-zinc-700">
-            Clique no botão abaixo e comece agora.
-          </h4>
-
-          <p className="font-medium text-2xl">
-            15 dias grátis <br /> cancele quando quiser
-          </p>
-
-          <a
-            href="https://gestao-odonto-cyan.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-[#2F5FFF] py-2 px-4 font-medium rounded-2xl text-white text-lg shadow-2xl hover:scale-105 transition"
-          >
-            Testar agora mesmo
-          </a>
         </div>
+
+        <div className="w-full flex flex-col items-center gap-4 max-w-xl text-center md:text-left">
+          <h2 className="font-medium text-2xl text-[#0096C7]">
+            Pronto para modernizar sua clínica?
+          </h2>
+
+          <h4 className="text-zinc-700">Clique no botão abaixo e comece agora.</h4>
+          <p className="font-medium text-2xl text-center">15 dias grátis <br /> cancele quando quiser</p>
+          <a href='#' className="bg-[#2F5FFF] p-1.5 font-medium rounded-2xl text-center text-white text-[1.2rem] shadow-2xl">Testar agora mesmo </a>
+        </div>
+        
       </div>
 
+
       <img
-        src="/14852068_5524778.jpg"
+        src={HeroImg.src}
         alt="dentista"
         className="w-full max-w-xs md:max-w-sm object-cover rounded-full"
       />
