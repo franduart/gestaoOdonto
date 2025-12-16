@@ -1,4 +1,4 @@
-import HeroImg from '@/../../public/14852068_5524778.jpg'
+
 
 export function Hero() {
   return (
@@ -32,12 +32,6 @@ export function Hero() {
         
       </div>
 
-
-      <img
-        src={HeroImg.src}
-        alt="dentista"
-        className="w-full max-w-xs md:max-w-sm object-cover rounded-full"
-      />
     </section>
   )
 }
