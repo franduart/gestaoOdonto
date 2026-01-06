@@ -18,7 +18,7 @@ export default async function OdontoPage(){
       <nav className="flex items-center justify-between gap-4 text-zinc-700 text-[1rem]">
         <a href="https://www.instagram.com/gestao_odonto_sistema/" target="_blank" className="text-[#38B6FF] text-2xl"><FaInstagram/></a>
         <a href="https://www.facebook.com/profile.php?id=61581831237938" target="_blank"  className="text-[#38B6FF] text-2xl"><FaFacebook /></a>
-        <a href="#" className="text-[#38B6FF] text-2xl" target="_blank" ><GrPersonalComputer /></a>
+        <a href="https://gestao-odonto-cyan.vercel.app/" className="text-[#38B6FF] text-2xl" target="_blank" ><GrPersonalComputer /></a>
       </nav>
     </header>
 
